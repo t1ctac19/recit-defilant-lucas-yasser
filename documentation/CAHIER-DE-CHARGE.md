@@ -66,7 +66,6 @@ On garde les propriétés de base (id, titre, texte, medias) parce qu'elles suff
 
 ## 6. La dataviz
 
-L'API sera choisie au cours du mer. 11 nov. Pour l'instant, on décrit l'idée.
 
 - **Chapitre** : 6
 - **La question** à laquelle le moment répond : combien de boss, d'armes et d'armures le Sans-éclat a-t-il vaincus et ramassés avant d'arriver au trône?
@@ -79,12 +78,12 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, on décrit l'idée.
 
 | Média | Chapitre | Source (produit, banque, IA) | Format | Responsable |
 |---|---|---|---|---|
-| Image en calques (3 plans) | 1 | IA | WebP ou PNG transparent | [Prénom A] |
-| Illustration du Bris | 2 | IA | WebP | [Prénom A] |
+| Image en calques (3 plans) | 1 | IA | SVG ou PNG transparent | [Prénom A] |
+| Illustration du Bris | 2 | IA | SVG | [Prénom A] |
 | Silhouette du Sans-éclat | 3 | IA | PNG transparent | [Prénom A] |
-| Carte du monde | 4 | IA | WebP | [Prénom A] |
-| 3 portraits de boss | 5 | IA | WebP | [Prénom B] |
-| SVG Arbre-Monde + trône | 7 | Produit par nous | SVG | [Prénom B] |
+| Carte du monde | 4 | IA | SVG | [Prénom A] |
+| 3 portraits de boss | 5 | IA | SVG | [Prénom B] |
+| SVG Arbre-Monde + trône | 7 | IA | SVG | [Prénom B] |
 
 Médias animables choisis :
 
