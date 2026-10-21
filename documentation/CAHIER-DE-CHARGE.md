@@ -73,7 +73,7 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, on décrit l'idée.
 - **Genre de données souhaitées** : des statistiques d'une partie d'Elden Ring (boss vaincus, armes obtenues, armures obtenues)
 - **La forme imaginée** : 3 chiffres géants qui comptent de 0 jusqu'à leur valeur, chacun avec son étiquette
 - **Ce qu'elles racontent dans le récit** : les chiffres montrent le chemin parcouru par le Sans-éclat juste avant la fin. Plus ils sont grands, plus la prise du trône semble méritée.
-- **Pistes d'API, si vous en avez trouvé** : aucune pour l'instant. On cherchera le 11 nov. S'il n'existe pas d'API gratuite pour ces statistiques, on affichera des totaux du jeu (nombre de boss, d'armes, d'armures) ou on ajustera l'idée avec l'enseignante.
+- **Pistes d'API, si vous en avez trouvé** : ....
 
 ## 7. L'inventaire des médias
 
