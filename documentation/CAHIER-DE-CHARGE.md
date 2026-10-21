@@ -1,9 +1,12 @@
 # Cahier de charges : Les Terres Intermédiaires, le voyage du Sans-éclat
 
-**Équipe** : [Prénom Nom], [Prénom Nom]
+**Équipe** : Lucas Bonneau, Yasser El Fantroussi
+
 **Thème** : un explicatif
-**Brainstorm** : [lien FigJam, ou lien vers les photos dans `documentation/brainstorm/`]
-**Storyboard Figma** : [lien]
+
+**Brainstorm** : [[lien](https://www.figma.com/board/A502H3KoZy0xZH7dhs0h3g/Untitled?node-id=0-1&p=f&t=LZ50chTnVDOTuyO0-0)]
+
+**Storyboard Figma** : [[lien](https://www.figma.com/design/8NE1MUtrjDL1hky7W0ijuq/canvas?node-id=10-42&t=2HRnbHMyvdZg1sDN-0)]
 
 ## 1. Le concept
 
@@ -13,12 +16,11 @@ Notre récit raconte l'univers d'Elden Ring en défilant, du Bris jusqu'au trôn
 
 ## 2. Le storyboard
 
-Storyboard Figma : [lien]
+Storyboard Figma : [[lien](https://www.figma.com/design/8NE1MUtrjDL1hky7W0ijuq/canvas?node-id=10-42&t=2HRnbHMyvdZg1sDN-0)]
 
 Le récit commence dans le calme, devant l'Arbre-Monde qui brille au loin, puis l'Anneau d'Elden se brise et le Sans-éclat revient d'exil pour traverser les régions et affronter les demi-dieux. Le point culminant est la fin : l'Arbre-Monde passe du gris à l'or et le Sans-éclat prend le trône. Le storyboard compte 7 cadres desktop (un par chapitre) et 2 cadres mobiles (chapitres 4 et 7).
 
 ## 3. Les chapitres
-
 
 | # | Titre | Ce que le chapitre raconte | Animation signature | Technique | Médias | Responsable |
 |---|---|---|---|---|---|---|
@@ -47,7 +49,7 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 
 ## 5. Le modèle de données
 
-Un exemple d'objet chapitre, tel qu'il sera dans notre fichier JSON :
+Un exemple d'objet chapitre, tel qu'il sera dans notre fichier JSON (exemple) :
 
 ```json
 {
@@ -66,24 +68,22 @@ On garde les propriétés de base (id, titre, texte, medias) parce qu'elles suff
 
 ## 6. La dataviz
 
-
 - **Chapitre** : 6
 - **La question** à laquelle le moment répond : combien de boss, d'armes et d'armures le Sans-éclat a-t-il vaincus et ramassés avant d'arriver au trône?
 - **Genre de données souhaitées** : des statistiques d'une partie d'Elden Ring (boss vaincus, armes obtenues, armures obtenues)
 - **La forme imaginée** : 3 chiffres géants qui comptent de 0 jusqu'à leur valeur, chacun avec son étiquette
 - **Ce qu'elles racontent dans le récit** : les chiffres montrent le chemin parcouru par le Sans-éclat juste avant la fin. Plus ils sont grands, plus la prise du trône semble méritée.
-- **Pistes d'API, si vous en avez trouvé** : ....
-
+- **Pistes d'API, si vous en avez trouvé** : 
 ## 7. L'inventaire des médias
 
 | Média | Chapitre | Source (produit, banque, IA) | Format | Responsable |
 |---|---|---|---|---|
-| Image en calques (3 plans) | 1 | IA | SVG ou PNG transparent | [Prénom A] |
-| Illustration du Bris | 2 | IA | SVG | [Prénom A] |
+| Image en calques (3 plans) | 1 | IA | WebP ou PNG transparent | [Prénom A] |
+| Illustration du Bris | 2 | IA | WebP | [Prénom A] |
 | Silhouette du Sans-éclat | 3 | IA | PNG transparent | [Prénom A] |
-| Carte du monde | 4 | IA | SVG | [Prénom A] |
-| 3 portraits de boss | 5 | IA | SVG | [Prénom B] |
-| SVG Arbre-Monde + trône | 7 | IA | SVG | [Prénom B] |
+| Carte du monde | 4 | IA | WebP | [Prénom A] |
+| 3 portraits de boss | 5 | IA | WebP | [Prénom B] |
+| SVG Arbre-Monde + trône | 7 | ai | SVG | [Prénom B] |
 
 Médias animables choisis :
 
@@ -94,8 +94,8 @@ Médias animables choisis :
 
 - **GSAP + ScrollTrigger** : pour les deux sections épinglées (la carte du chapitre 4 et l'Arbre-Monde du chapitre 7), où une animation doit suivre précisément le défilement.
 - **Vue.js (CDN)** : pour la barre de progression et pour charger les chapitres depuis le JSON, sans outil de compilation.
-- **Hébergement** : [à confirmer, par exemple GitHub Pages, puisque le projet est déjà sur GitHub]
-- **Autres** (Anime.js, Chart.js, etc., s'il y a lieu) : aucun pour l'instant. Le compteur du chapitre 6 sera fait en JavaScript simple.
+- **Hébergement** : [à confirmer]
+- **Autres** (Anime.js, Chart.js, etc., s'il y a lieu) :
 
 ## 9. Le calendrier de l'équipe (jusqu'au prototype du 13 nov.)
 
