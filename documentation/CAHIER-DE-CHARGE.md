@@ -1,4 +1,4 @@
-# Cahier de charges : Les Terres Intermédiaires, le voyage du Sans-éclat
+# Cahier de charges : le voyage du Sans-éclat
 
 **Équipe** : Lucas Bonneau, Yasser El Fantroussi
 
