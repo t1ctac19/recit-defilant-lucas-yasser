@@ -1,7 +1,8 @@
+# Cahier de charges : le voyage du Sans-éclat
 
+**Équipe** : Lucas Bonneau, Yasser El Fantroussi
 
-## Yasser El fatroussi
-## Lucas Bonneau
+**Thème** : Fiction
 
 **Brainstorm** : [[lien](https://www.figma.com/board/A502H3KoZy0xZH7dhs0h3g/Untitled?node-id=0-1&p=f&t=LZ50chTnVDOTuyO0-0)]
 
