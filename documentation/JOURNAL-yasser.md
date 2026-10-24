@@ -1,7 +1,3 @@
-# Journal de bord – Prénom
-
-## Entrée 1
-
 ### 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
 J'ai créé et modifié le cahier des charges. J'ai aussi créé le storyboard, mais je n'ai pas encore mis le contenu à l'intérieur : pour l'instant, je n'ai écrit que la description de chaque case, et les croquis restent à faire.
 (Ajouter ici les références à mes commits.)
@@ -18,7 +14,6 @@ Ma prochaine étape est de travailler sur la séparation des tâches avec mon é
 ### 5. Si j'ai utilisé l'IA comme source pour un média…
 Je n'ai pas utilisé l'IA pour produire de média.
 
----
 
 ## Processus créatif
 
@@ -39,5 +34,4 @@ Je n'ai pas utilisé l'IA pour produire de média.
 - Ce qui bouge : le texte défile par-dessus des images, des vidéos en boucle et des graphiques. L'arrière-plan change et se déplace à des vitesses différentes (effet de parallaxe), ce qui donne de la profondeur.
 - Ce que j'aimerais emprunter : l'effet de parallaxe et la façon de mélanger le texte et les médias sans que ça alourdisse la lecture.
 
-### Trace du brainstorm de l'équipe
-(À coller ici la trace du brainstorm : photo du tableau, capture d'écran, notes ou liste d'idées. Chaque membre de l'équipe l'ajoute dans son propre journal, même si c'est la même trace.)
+**Brainstorm** : [[lien](https://www.figma.com/board/A502H3KoZy0xZH7dhs0h3g/Untitled?node-id=0-1&p=f&t=LZ50chTnVDOTuyO0-0)]
