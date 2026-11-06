@@ -41,6 +41,7 @@
 
 .ch5-illustration {
   display: grid;
+  cursor:pointer; 
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;    
   width: 90%;
@@ -48,11 +49,23 @@
   align-items: center;
 }
 
-.ch5-image {
+.ch5-image-front {
   width: 100%;
   object-fit: contain;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
   border: 2px solid #000000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
+.ch5-image-back{
+  position: absolute;
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
