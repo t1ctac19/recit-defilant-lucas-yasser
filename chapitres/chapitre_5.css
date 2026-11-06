@@ -1,0 +1,58 @@
+.ch5-titre {
+    font-family: 'Cinzel', cursive;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ch5-texte {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px 0;
+
+}
+
+.ch5-paragraphe {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.ch5-illustration-titre {
+    display: block;
+    text-align: center;
+    font-family: 'Cinzel', cursive;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.ch5-illustration {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;    
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.ch5-image {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
