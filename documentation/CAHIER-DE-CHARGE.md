@@ -76,12 +76,12 @@ On garde les propriétés de base (id, titre, texte, medias) parce qu'elles suff
 
 | Média | Chapitre | Source (produit, banque, IA) | Format | Responsable |
 |---|---|---|---|---|
-| Image en calques (3 plans) | 1 | IA | WebP ou PNG transparent | Lucas |
-| Illustration du Bris | 2 | IA | WebP | Yasser |
-| Silhouette du Sans-éclat | 3 | IA | PNG transparent | Lucas |
-| Carte du monde | 4 | IA | WebP | Yasser|
-| 3 portraits de boss | 5 | IA | WebP | Lucas |
-| SVG Arbre-Monde + trône | 7 | ai | SVG | Lucas |
+| Image en calques (3 plans) | 1 | Claude ai et inspirer des images de l'environement prises directement du jeu elden ring  | WebP ou PNG transparent | Lucas |
+| Illustration du Bris | 2 | rawSVG.com | WebP | Yasser |
+| Silhouette du Sans-éclat | 3 | Claude ai et inspirer des images du personnage principale prises directement du jeu elden ring | PNG transparent | Lucas |
+| Carte du monde | 4 | Claude ai et inspirer des images de la map principale prises directement du jeu elden ring | WebP | Yasser|
+| 3 portraits de boss | 5 | Claude ai et inspirer des images de bosses prises directement du jeu elden ring  | WebP | Lucas |
+| SVG Arbre-Monde + trône | 7 | Claude ai inspirer des images prises directement du jeu elden ring | SVG | Lucas |
 
 Médias animables choisis :
 
