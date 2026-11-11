@@ -78,7 +78,7 @@ On garde les propriétés de base (id, titre, texte, medias) parce qu'elles suff
 |---|---|---|---|---|
 | Image en calques (3 plans) | 1 | Claude ai et inspirer des images de l'environement prises directement du jeu elden ring  | WebP ou PNG transparent | Lucas |
 | Illustration du Bris | 2 | rawSVG.com | WebP | Yasser |
-| Silhouette du Sans-éclat | 3 | Claude ai et inspirer des images du personnage principale prises directement du jeu elden ring | PNG transparent | Lucas |
+| Silhouette du Sans-éclat | 3 | Claude ai et inspirer des images du personnage principale prises directement du jeu elden ring | svg | Lucas |
 | Carte du monde | 4 | Claude ai et inspirer des images de la map principale prises directement du jeu elden ring | WebP | Yasser|
 | 3 portraits de boss | 5 | Claude ai et inspirer des images de bosses prises directement du jeu elden ring  | WebP | Lucas |
 | SVG Arbre-Monde + trône | 7 | Claude ai inspirer des images prises directement du jeu elden ring | SVG | Lucas |
