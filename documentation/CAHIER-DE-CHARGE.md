@@ -22,13 +22,13 @@ Le récit commence dans le calme, devant l'Arbre-Monde qui brille au loin, puis 
 
 | # | Titre | Ce que le chapitre raconte | Animation signature | Technique | Médias | Responsable |
 |---|---|---|---|---|---|---|
-| 1 | L'Arbre-Monde | Un monde calme, avec l'Arbre-Monde qui brille au loin. | Parallaxe des 3 plans au défilement | CSS au défilement | Image en calques, 3 plans | [Prénom A] |
-| 2 | Le Bris | L'Anneau d'Elden se brise et le monde sombre. | Paragraphes qui glissent et apparaissent un à un | IntersectionObserver | Une illustration | [Prénom A] |
-| 3 | Le Sans-éclat | Le héros revient d'exil, sans lumière, avec une mission. | Silhouette qui apparaît en fondu au défilement | CSS au défilement | Une silhouette | [Prénom A] |
-| 4 | Le voyage | Le Sans-éclat traverse 3 régions : Limgrave, Liurnia, Caelid. | Marqueur qui se déplace sur une carte épinglée | GSAP + ScrollTrigger (épinglé n° 1) | Carte du monde | [Prénom A] |
-| 5 | Les demi-dieux | Il affronte 3 boss : Godrick, Rennala, Malenia. | Cartes de boss qui apparaissent en fondu, une après l'autre | CSS au défilement | 3 portraits | [Prénom B] |
-| 6 | Le bilan du voyage | Des chiffres sur le voyage : boss vaincus, armes obtenues, armures obtenues. | Chiffres qui comptent de 0 jusqu'à leur valeur | IntersectionObserver | Aucun (dataviz) | [Prénom B] |
-| 7 | Le trône | Le Sans-éclat devient Seigneur d'Elden et prend le trône. | Arbre-Monde en SVG qui passe de gris à doré, puis le trône apparaît | GSAP + ScrollTrigger (épinglé n° 2) | SVG préparé pour GSAP | [Prénom B] |
+| 1 | L'Arbre-Monde | Un monde calme, avec l'Arbre-Monde qui brille au loin. | Parallaxe des 3 plans au défilement | CSS au défilement | Image en calques, 3 plans | Lucas |
+| 2 | Le Bris | L'Anneau d'Elden se brise et le monde sombre. | Paragraphes qui glissent et apparaissent un à un | IntersectionObserver | Une illustration | Yasser |
+| 3 | Le Sans-éclat | Le héros revient d'exil, sans lumière, avec une mission. | Silhouette qui apparaît en fondu au défilement | CSS au défilement | Une silhouette | Lucas |
+| 4 | Le voyage | Le Sans-éclat traverse 3 régions : Limgrave, Liurnia, Caelid. | Marqueur qui se déplace sur une carte épinglée | GSAP + ScrollTrigger (épinglé n° 1) | Carte du monde | Yasser |
+| 5 | Les demi-dieux | Il affronte 3 boss : Godrick, Rennala, Malenia. | Cartes de boss qui apparaissent en fondu, une après l'autre | CSS au défilement | 3 portraits | Lucas |
+| 6 | Le bilan du voyage | Des chiffres sur le voyage : boss vaincus, armes obtenues, armures obtenues. | Chiffres qui comptent de 0 jusqu'à leur valeur | IntersectionObserver | Aucun (dataviz) | Yasser |
+| 7 | Le trône | Le Sans-éclat devient Seigneur d'Elden et prend le trône. | Arbre-Monde en SVG qui passe de gris à doré, puis le trône apparaît | GSAP + ScrollTrigger (épinglé n° 2) | SVG préparé pour GSAP | Lucas/Yasser |
 
 Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, IntersectionObserver) apparaît au moins une fois.
 
@@ -36,13 +36,13 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 
 | Élément | Responsable | Ce que ça comprend |
 |---|---|---|
-| Chapitres 1 à 4 | [Prénom A] | Contenu, intégration, animations |
-| Chapitres 5 à 7 | [Prénom B] | Contenu, intégration, animations |
-| Média animable 1 : image en calques | [Prénom A] | Préparation et intégration |
-| Média animable 2 : SVG préparé pour GSAP | [Prénom B] | Préparation et intégration |
-| Composant Vue : barre de progression | [Prénom A] | Barre fixe en haut de la page qui se remplit selon le défilement |
-| *Fetch* externe et dataviz | [Prénom B] | Récupérer les données de l'API et les afficher au chapitre 6 |
-| Chargement des chapitres (JSON) | [Prénom A] | Lire le fichier JSON et afficher les chapitres |
+| Chapitres 1, 3, 5 et 7 | Lucas | Contenu, intégration, animations |
+| Chapitres 2, 4, 6 et 7|  yasser | Contenu, intégration, animations |
+| Média animable 1 : image en calques | Yasser/Lucas | Préparation et intégration |
+| Média animable 2 : SVG préparé pour GSAP | Yasser/Lucas | Préparation et intégration |
+| Composant Vue : barre de progression | Yasser| Barre fixe en haut de la page qui se remplit selon le défilement |
+| *Fetch* externe et dataviz | Yasser | Récupérer les données de l'API et les afficher au chapitre 6 |
+| Chargement des chapitres (JSON) | Lucas | Lire le fichier JSON et afficher les chapitres |
 | Structure commune (HTML, CSS de base, mise en page) | Ensemble | |
 
 ## 5. Le modèle de données
@@ -76,17 +76,17 @@ On garde les propriétés de base (id, titre, texte, medias) parce qu'elles suff
 
 | Média | Chapitre | Source (produit, banque, IA) | Format | Responsable |
 |---|---|---|---|---|
-| Image en calques (3 plans) | 1 | IA | WebP ou PNG transparent | [Prénom A] |
-| Illustration du Bris | 2 | IA | WebP | [Prénom A] |
-| Silhouette du Sans-éclat | 3 | IA | PNG transparent | [Prénom A] |
-| Carte du monde | 4 | IA | WebP | [Prénom A] |
-| 3 portraits de boss | 5 | IA | WebP | [Prénom B] |
-| SVG Arbre-Monde + trône | 7 | ai | SVG | [Prénom B] |
+| Image en calques (3 plans) | 1 | IA | WebP ou PNG transparent | Lucas |
+| Illustration du Bris | 2 | IA | WebP | Yasser |
+| Silhouette du Sans-éclat | 3 | IA | PNG transparent | Lucas |
+| Carte du monde | 4 | IA | WebP | Yasser|
+| 3 portraits de boss | 5 | IA | WebP | Lucas |
+| SVG Arbre-Monde + trône | 7 | ai | SVG | Lucas |
 
 Médias animables choisis :
 
-- [Prénom A] : image en calques, pour le chapitre 1
-- [Prénom B] : SVG préparé pour GSAP, pour le chapitre 7
+- Lucas : image en calques, pour le chapitre 1
+- Lucas : SVG préparé pour GSAP, pour le chapitre 7
 
 ## 8. Les choix technologiques
 
