@@ -1,0 +1,33 @@
+.parallax_ch3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.parallax_ch3 img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+#sky_ch3{
+    width: 100%;
+    object-fit: fill;
+}
+
+#hill_ch3{
+    width: 100%;
+    object-fit: fill;
+}
+
+#rock_ch3{
+    width: 100%;
+    object-fit: fill;
+}
+
+#nuage{
+    width: 20%;
+    object-fit: contain;
+}
