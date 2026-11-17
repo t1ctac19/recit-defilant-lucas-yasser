@@ -37,3 +37,25 @@ Je n'ai pas utilisé l'IA pour produire de média.
 - Ce que j'aimerais emprunter : l'effet de parallaxe et la façon de mélanger le texte et les médias sans que ça alourdisse la lecture.
 
 **Brainstorm** : [[lien](https://www.figma.com/board/A502H3KoZy0xZH7dhs0h3g/Untitled?node-id=0-1&p=f&t=LZ50chTnVDOTuyO0-0)]
+
+## 2eme Entrée
+
+### 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
+J'ai terminé l'animation du chapitre 2 (HTML, CSS et JavaScript). Chaque paragraphe est dans sa propre boîte, et le fond défile plus lentement que les boîtes, ce qui donne un effet de profondeur. J'ai aussi fait le style de toute la page, avec les couleurs, les polices et le fond inspirés d'Elden Ring.
+Pour les blocs de texte, je me suis inspiré d'une capture du jeu (`assets/images/inspirations/image.png`) : j'ai repris son panneau sombre avec un fin contour doré.
+
+![Image d'inspiration pour les blocs de texte](../assets/images/inspirations/image.png)
+
+
+### 2. Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Je n'ai pas rencontré de difficulté particulière pendant ce bloc.
+
+### 3. Qu'est-ce que j'ai appris que je ne savais pas avant?
+J'ai appris à faire un effet de parallaxe : deux éléments défilent à des vitesses différentes, ce qui donne de la profondeur.
+
+### 4. Quelle est ma prochaine étape concrète?
+Ma prochaine étape est de terminer les quatre chapitres qu'il me reste.
+
+### 5. Si j'ai utilisé l'IA comme source pour un média…
+Je n'ai pas utilisé l'IA pour produire de média.
+

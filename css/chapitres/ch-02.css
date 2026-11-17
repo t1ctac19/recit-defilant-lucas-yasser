@@ -1,30 +1,160 @@
 #chapitre2 {
-    min-height: 100vh;
-    padding: 4rem 1.5rem;
-    background: #3a3a3a;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  position: relative;
+  overflow-x: clip;
+  padding: 0 1.5rem 20vh;
+  background: #141b14;
+  color: #ece6c4;
 }
 
-.ch2-illustration {
-    max-width: 100%;
-    width: 600px;
-    min-height: 200px;
+/* ----- Le fond ----- */
+
+/* Cette couche est aussi haute que tout le chapitre */
+.ch2-fond-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
+
+/* Ce cadre reste collé à l'écran pendant qu'on défile (sticky) */
+.ch2-fond-cadre {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* L'image est plus haute que l'écran pour pouvoir monter dans le cadre.
+   La hauteur exacte est réglée par le JS (DECALAGE_FOND). */
+.ch2-fond {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150vh;
+  object-fit: cover;
+}
+
+/* Bords sombres */
+.ch2-fond-cadre::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(20, 27, 20, 0.1) 0%, rgba(20, 27, 20, 0.7) 100%);
+}
+
+/* ----- Titre et logo ----- */
+
+.ch2-entete {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.ch2-logo {
+  height: clamp(3.5rem, 9vw, 7rem);
+  width: auto;
+}
+
+.ch2-titre {
+  margin: 0;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #e9e0a4;
+  text-shadow: 0 0 30px rgba(233, 224, 164, 0.5);
+}
+
+/* ----- Les cartes ----- */
 
 .ch2-textes {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    max-width: 600px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30vh; /* espace entre les cartes */
 }
 
-/* État de départ : cachés et décalés vers le bas */
+.ch2-carte {
+  position: relative;
+  width: min(94%, 1200px);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* La boîte : panneau sombre style Elden Ring */
+.ch2-carte-fond {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
+  border: 1px solid #8f7f58;
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.8),
+    0 20px 50px rgba(0, 0, 0, 0.7),
+    inset 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Fine ligne pâle à l'intérieur du contour */
+.ch2-carte-fond::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(190, 170, 115, 0.3);
+  border-radius: 3px;
+}
+
+/* Petit ornement doré au centre du haut */
+.ch2-carte-fond::after {
+  content: "◆";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  color: #c9b77a;
+  font-size: 0.9rem;
+  text-shadow: 0 0 4px #000, 0 0 8px #000;
+}
+
+/* Le texte, par-dessus la boîte */
+/* Le texte, par-dessus la boîte */
 .ch2-paragraphe {
-    border: 2px solid #fff;
-    border-radius: 12px;
-    padding: 1rem 1.25rem;
+  position: relative;
+  margin: 0;
+  max-width: 760px;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2.3vw, 1.9rem);
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  color: #e6dfc8; /* blanc cassé, comme le texte du jeu */
+}
+
+/* Petit numéro doré au-dessus du texte */
+.ch2-paragraphe::before {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.4em;
+  color: #b99a4a; /* or un peu plus discret */
+}
+.ch2-carte:nth-child(1) .ch2-paragraphe::before { content: "I"; }
+.ch2-carte:nth-child(2) .ch2-paragraphe::before { content: "II"; }
+.ch2-carte:nth-child(3) .ch2-paragraphe::before { content: "III"; }
+
+/* Sur petit écran */
+@media (max-width: 700px) {
+  .ch2-carte {
+    min-height: 80vh;
+  }
 }
