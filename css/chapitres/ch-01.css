@@ -12,9 +12,11 @@
     object-fit: contain;
 }
 
-#sky{
-    width: 100%;
+.calque--ciel-1{
+    width: 100vw;
     object-fit: fill;
+
+    
 }
 
 #hill{
@@ -30,4 +32,80 @@
 #ruins{
     width: 100%;
     object-fit: fill;
+}
+
+
+
+@keyframes tres-loin {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+@keyframes loin {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(60vh);
+  }
+}
+@keyframes milieu {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(35vh);
+  }
+}
+@keyframes proche {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(12vh);
+  }
+}
+@keyframes devant {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-40vh);
+  }
+}
+@keyframes premier-plan {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-110vh);
+  }
+}
+
+
+
+.calque {
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
+}
+.tres-loin {
+  animation-name: tres-loin;
+}
+.loin {
+  animation-name: loin;
+}
+.milieu {
+  animation-name: milieu;
+}
+.proche {
+  animation-name: proche;
+}
+.devant {
+  animation-name: devant;
+}
+.premier-plan {
+  animation-name: premier-plan;
 }
