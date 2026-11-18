@@ -1,33 +1,45 @@
-.parallax_ch3{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
+.parallax_ch3 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: clip;
 }
 
 .parallax_ch3 img {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: contain;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
 }
 
-#sky_ch3{
-    width: 100%;
-    object-fit: fill;
+.calque--ciel-3 {
+  width: 100vw;
+  object-fit: cover;
 }
 
-#hill_ch3{
-    width: 100%;
-    object-fit: fill;
+
+.calque--hill-3 {
+  width: 100vw;
+  bottom: 10vh;
 }
 
-#rock_ch3{
-    width: 100%;
-    object-fit: fill;
+.calque--rock-3 {
+  width: 100vw;
+  top: 50vh;
 }
 
-#nuage{
+.calque--ruin-3 {
+  width: 100vw;
+  bottom: 35vh;
+}
+
+#perso_ch3{
+  right: 20vw;
+  top: 50vh;
+  object-fit: contain;
+}
+
+.nuage{
     width: 20%;
     object-fit: contain;
     display: flex;
@@ -55,3 +67,84 @@
     justify-content: flex-start;
 
 }
+
+
+@keyframes proche {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(12vh);
+  }
+}
+@keyframes devant {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-40vh);
+  }
+}
+@keyframes premier-plan {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50vh);
+  }
+}
+
+.calque {
+  animation: linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
+}
+
+.loin {
+  animation-name: loin;
+}
+.milieu {
+  animation-name: milieu;
+}
+.proche {
+  animation-name: proche;
+}
+.devant {
+  animation-name: devant;
+}
+.premier-plan {
+  animation-name: premier-plan;
+}
+
+/* ------------------------------- Texte ------------------------------> */
+
+/* .ch3-textes {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30vh;
+}
+
+.ch3-carte {
+  position: relative;
+  width: min(94%, 1200px);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ch3-carte-fond {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
+  border: 1px solid #8f7f58;
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.8),
+    0 20px 50px rgba(0, 0, 0, 0.7),
+    inset 0 0 60px rgba(0, 0, 0, 0.6);
+} */
