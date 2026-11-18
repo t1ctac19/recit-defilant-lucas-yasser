@@ -82,7 +82,37 @@
     <img class="nuage" id="nuage_04" src="assets/images/ch-03/nuage.webp" alt="">
     </div>
   </section>
-  <section id="chapitre4"></section>
+<section id="chapitre4">
+  <img class="ch4-fond" src="assets/images/ch-04/map_elden_ring.jpg" alt="" aria-hidden="true" />
+
+  <h2 class="ch4-titre">Le voyage</h2>
+
+  <svg id="ch4-svg" viewBox="0 0 1200 600" aria-label="Trajet du Sans-éclat">
+    <!-- Chemin pâle (le trajet complet) -->
+    <path class="ch4-chemin-fond"
+      d="M120,430 C260,540 330,200 520,160 C700,140 780,470 940,440 C1040,420 1090,340 1090,270" />
+    <!-- Chemin doré (se dessine au défilement) -->
+    <path id="ch4-chemin"
+      d="M120,430 C260,540 330,200 520,160 C700,140 780,470 940,440 C1040,420 1090,340 1090,270" />
+    <!-- Marqueur (les points et les noms sont ajoutés par le JS) -->
+    <circle id="ch4-marqueur" cx="0" cy="0" r="14" />
+  </svg>
+
+  <div class="ch4-textes">
+    <div class="ch4-texte">
+      <h3>Limgrave</h3>
+      <p>Les prairies sont vertes, mais les ruines rappellent déjà la guerre.</p>
+    </div>
+    <div class="ch4-texte">
+      <h3>Liurnia</h3>
+      <p>Un pays de lacs et de brume, où l'académie de Raya Lucaria veille au loin.</p>
+    </div>
+    <div class="ch4-texte">
+      <h3>Caelid</h3>
+      <p>Une terre rouge et dévastée, rongée par la pourriture écarlate.</p>
+    </div>
+  </div>
+</section>
   <section id="chapitre5">
     <h2 class="ch5-titre">La Chute</h2>
 
@@ -118,7 +148,35 @@
       </p>
     </div>
   </section>
-  <section id="chapitre6"></section>
+<section id="chapitre6">
+  <h2 class="ch6-titre">Le bilan du voyage</h2>
+  <p class="ch6-intro">
+    Des boss à vaincre, des armes et des armures à ramasser : voici l'ampleur
+    des Terres Intermédiaires.
+  </p>
+
+  <div class="ch6-chiffres">
+    <div class="ch6-chiffre">
+      <span class="ch6-nombre" data-cle="bosses">0</span>
+      <span class="ch6-etiquette">Boss</span>
+      <div class="ch6-barre"><div class="ch6-barre-remplie" data-cle="bosses"></div></div>
+    </div>
+
+    <div class="ch6-chiffre">
+      <span class="ch6-nombre" data-cle="armes">0</span>
+      <span class="ch6-etiquette">Armes</span>
+      <div class="ch6-barre"><div class="ch6-barre-remplie" data-cle="armes"></div></div>
+    </div>
+
+    <div class="ch6-chiffre">
+      <span class="ch6-nombre" data-cle="armures">0</span>
+      <span class="ch6-etiquette">Armures</span>
+      <div class="ch6-barre"><div class="ch6-barre-remplie" data-cle="armures"></div></div>
+    </div>
+  </div>
+
+  <p class="ch6-note">Les barres sont à la même échelle.</p>
+</section>
   <section id="chapitre7"></section>
 
   <footer></footer>
