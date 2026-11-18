@@ -151,6 +151,14 @@
 .ch2-carte:nth-child(1) .ch2-paragraphe::before { content: "I"; }
 .ch2-carte:nth-child(2) .ch2-paragraphe::before { content: "II"; }
 .ch2-carte:nth-child(3) .ch2-paragraphe::before { content: "III"; }
+/* ----- Braises (animation toujours active) ----- */
+.ch2-braise {
+  position: absolute;
+  bottom: -10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff6c0 0%, #e9b84a 45%, transparent 70%);
+  pointer-events: none;
+}
 
 /* Sur petit écran */
 @media (max-width: 700px) {
