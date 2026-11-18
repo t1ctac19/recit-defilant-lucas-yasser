@@ -1,0 +1,138 @@
+#chapitre4 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #0d130d;
+}
+
+/* ----- La carte en fond, assombrie ----- */
+
+.ch4-fond {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 85%;
+  filter: brightness(0.4) saturate(0.6) sepia(0.3);
+}
+
+/* Bords très sombres, pour que le centre ressorte */
+#chapitre4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse at center, rgba(13, 19, 13, 0.1) 30%, rgba(13, 19, 13, 0.85) 100%),
+    linear-gradient(rgba(13, 19, 13, 0.35), rgba(13, 19, 13, 0.35));
+}
+
+/* Tout le contenu passe au-dessus du fond */
+.ch4-titre,
+#ch4-svg,
+.ch4-textes {
+  position: relative;
+  z-index: 2;
+}
+
+.ch4-titre {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ----- Le trajet ----- */
+
+#ch4-svg {
+  width: min(92vw, 1100px);
+  height: auto;
+  max-height: 55vh;
+  overflow: visible;
+}
+
+.ch4-chemin-fond {
+  fill: none;
+  stroke: rgba(236, 230, 196, 0.35);
+  stroke-width: 3;
+  stroke-dasharray: 6 12;
+  stroke-linecap: round;
+}
+
+#ch4-chemin {
+  fill: none;
+  stroke: #e9e0a4;
+  stroke-width: 5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 8px rgba(233, 224, 164, 0.9));
+}
+
+#ch4-marqueur {
+  fill: #fff6c0;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 12px #e9b84a);
+}
+
+.ch4-point {
+  fill: #17140f;
+  stroke: #e9e0a4;
+  stroke-width: 3;
+}
+
+.ch4-etiquette {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 30px;
+  fill: #e9e0a4;
+  text-anchor: middle;
+  stroke: #0d130d;       /* contour sombre pour rester lisible sur la carte */
+  stroke-width: 6px;
+  paint-order: stroke;
+  opacity: 0.45;
+  transition: opacity 0.4s;
+}
+.ch4-etiquette.actif {
+  opacity: 1;
+}
+
+/* ----- Panneau de texte, style Elden Ring ----- */
+
+.ch4-textes {
+  width: min(92vw, 680px);
+  height: 7.5rem;
+  background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
+  border: 1px solid #8f7f58;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8), 0 10px 30px rgba(0, 0, 0, 0.7),
+    inset 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.ch4-texte {
+  position: absolute;
+  inset: 0.9rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+
+.ch4-texte h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+}
+
+.ch4-texte p {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: clamp(0.85rem, 1.6vw, 1.05rem);
+  line-height: 1.5;
+  color: #e6dfc8;
+}
