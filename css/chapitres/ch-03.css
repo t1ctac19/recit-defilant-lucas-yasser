@@ -49,22 +49,30 @@
 #nuage_01{
     align-items: flex-start;
     justify-content: flex-start;
+    bottom: 25vh;
+    right: 20vw;
 
 }
 
 #nuage_02{
     align-items: flex-start;
     justify-content: flex-start;
+    bottom: 25vh;
+    left: 20vw;
 
 }
 #nuage_03{
     align-items: flex-start;
     justify-content: flex-start;
+    top: 25vh;
+    left: 20vw;
 
 }
 #nuage_04{
     align-items: flex-start;
     justify-content: flex-start;
+    top: 25vh;
+    right: 20vw;
 
 }
 
