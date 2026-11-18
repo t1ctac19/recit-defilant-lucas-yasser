@@ -2,7 +2,7 @@
     font-family: 'Cinzel', cursive;
     font-size: 24px;
     line-height: 1.5;
-    color: #000000;
+    color: #fff;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -11,7 +11,7 @@
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: #fff;
     margin: 20px 0;
 
 }
@@ -19,7 +19,7 @@
 .ch5-paragraphe {
     display: flex;
     flex-direction: column;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     border-radius: 12px;
     padding: 1rem 1.25rem;
     width: 50%;
@@ -35,7 +35,7 @@
     font-family: 'Cinzel', cursive;
     font-size: 20px;
     line-height: 1.5;
-    color: #000000;
+    color: #fff;
     margin: 0;
 }
 
@@ -54,7 +54,7 @@
   object-fit: contain;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
-  border: 2px solid #000000;
+  border: 2px solid #fff;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -65,7 +65,32 @@
   object-fit: contain;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
-  border: 2px solid #000000;
+  border: 2px solid #fff;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+/* js */
+    /* const texte_ch03 = section.querySelector("#texte_ch03");
+
+  const anim = gsap.timeline({
+        scrollTrigger: {
+            trigger: section,
+            start: "top top",
+            end: "+=1000",
+            scrub: 1,
+            pin: true,
+        }
+    });
+
+    anim.from(texte_ch03, {
+        x: 1000,
+        opacity: 0,
+        duration: 1
+    });
+
+    anim.to(texte_ch03, {
+        x: 1000,
+        opacity: 1,
+        duration: 1
+    }); */
