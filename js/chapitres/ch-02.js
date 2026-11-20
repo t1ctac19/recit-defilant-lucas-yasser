@@ -120,38 +120,6 @@ export function animate(section, chapter) {
     };
   }
 
-  section.querySelectorAll(".ch2-carte").forEach((carte, i) => {
-    const boite = carte.querySelector(".ch2-carte-fond");
-    const texte = carte.querySelector(".ch2-paragraphe");
-
-    // Une carte penche d'un côté, la suivante de l'autre
-    const sens = i % 2 === 0 ? 1 : -1;
-
-    // La boîte glisse et s'incline depuis son centre
-    gsap.fromTo(
-      boite,
-      { x: -GLISSE_BOITE * sens * facteur, rotation: -INCLINAISON * sens },
-      {
-        x: GLISSE_BOITE * sens * facteur,
-        rotation: INCLINAISON * sens,
-        ease: "none",
-        scrollTrigger: reglageScroll(carte),
-      }
-    );
-
-    // Le texte bouge plus vite et dans l'autre sens : ça donne de la profondeur
-    gsap.fromTo(
-      texte,
-      { x: 20 * sens * facteur, y: PROFONDEUR_TEXTE },
-      {
-        x: -20 * sens * facteur,
-        y: -PROFONDEUR_TEXTE,
-        ease: "none",
-        scrollTrigger: reglageScroll(carte),
-      }
-    );
-  });
-
   // ----- Ambiance : braises et logo (toujours actif) -----
   ajouterAmbiance(section);
 }
