@@ -1,7 +1,7 @@
 .parallax_ch1 {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
   overflow: clip;
 }
 
@@ -20,30 +20,64 @@
 
 .calque--hill-1 {
   width: 100vw;
-  bottom: 10vh;
-  left: 10vw;
+  bottom: 25vh;
+  left: 8vw;
 }
 
 .calque--rock-1 {
   width: 100vw;
-  top: 50vh;
+  top: 100vh;
 }
 
 .calque--ruin-1 {
   width: 100vw;
-  bottom: 35vh;
+  
 }
 
 #tree{
   object-fit: contain;
-  bottom: 65vh;
-  left: 20vh;
+  bottom: 80vh;
+  left:20vw ;
 }
 
 #character{
-  right: 20vw;
-  top: 50vh;
+  top: 100vh;
   object-fit: contain;
+}
+
+
+.ch1-entete {
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  z-index: 2;
+  padding-left: 3%;
+  padding-right: 3%;
+  min-height: 30vh;
+  min-width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
+  border: 1px solid #8f7f58;
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.8),
+    0 10px 30px rgba(0, 0, 0, 0.7),
+    inset 0 0 40px rgba(0, 0, 0, 0.6);
+
+  
+}
+
+.ch1-titre {
+  margin: 0;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #e9e0a4;
+  text-shadow: 0 0 30px rgba(233, 224, 164, 0.5);
 }
 
 
@@ -69,7 +103,7 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(12vh);
+    transform: translateY(20vh);
   }
 }
 @keyframes devant {
