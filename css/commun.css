@@ -23,5 +23,5 @@
 }
 .chapitres-nav a.actif {
   font-weight: 700;
-  color: #ff2b47;
+  color: var(--or-fonce);
 }

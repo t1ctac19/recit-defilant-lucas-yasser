@@ -131,12 +131,15 @@
   height: 100%;
   top: 0;
   left: 0;
-  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
   z-index: 10;
-  pointer-events: none;
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: clamp(0.85rem, 1.6vw, 1.05rem);
+  line-height: 1.5;
+  color: #e6dfc8;
 }
 
 .ch3-paragraphe {
@@ -175,15 +178,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   gap: 1.5rem;
-  background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
-  border: 1px solid #8f7f58;
-  border-radius: 6px;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.8),
-    0 10px 30px rgba(0, 0, 0, 0.7),
-    inset 0 0 40px rgba(0, 0, 0, 0.6);
-
-  
+  letter-spacing: 0.15em;
 }
 
 .ch3-titre {
