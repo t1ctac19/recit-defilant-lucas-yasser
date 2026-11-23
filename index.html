@@ -18,7 +18,10 @@
 </head>
 
 <body>
-  <section id="chapitre1">
+  <section class="chapitre" id="chapitre1">
+    <div class="calque devant ch1-entete">
+    <h2 class="ch1-titre">Le sans-éclat</h2>
+  </div>
     <div class="parallax_ch1">
     <img id="sky" class="calque--ciel-1" src="assets/images/ch-01/elden-ring-sky.svg" alt="">
     <img id="tree" class="calque loin calque--arbre-1" src="assets/images/ch-01/elden-ring-tree.svg" alt="">
@@ -29,7 +32,7 @@
     </div>
   </section>
 
-<section id="chapitre2">
+<section class="chapitre" id="chapitre2">
   <div class="ch2-fond-wrap">
     <div class="ch2-fond-cadre">
       <img class="ch2-fond" src="assets/images/ch-01/elden-ring-landscape.svg" alt="" aria-hidden="true" />
@@ -69,29 +72,31 @@
   </div>
 </section>
 
-  <section id="chapitre3">
+  <section class="chapitre" id="chapitre3">
+  <div class="ch3-entete">
+    
+    <h2 class="ch3-titre">Le Bris</h2>
+  </div>
     <div class="parallax_ch3">
     <img id="sky_ch3" class="calque--ciel-1" src="assets/images/ch-03/ciel.webp" alt="">
     <img id="hill_ch3" class="calque proche calque--hill-3" src="assets/images/ch-01/foreground-hill.svg" alt="">
     <img id="rock_ch3" class="calque devant calque--rock-3" src="assets/images/ch-01/rocks-layer.svg" alt="">
     <img id="perso_ch3" class="calque premier-plan calque--character-1" src="assets/images/ch-03/elden_ring_character_02.webp" alt="">
+    <div class="ch3-texte">
+      <p class="ch3-paragraphe">
+            Le Sans-éclat commence donc sa route vers les demi-dieu pour les
+            déthroner de leurs reigne de torture et prendre le throne d'elden
+            pour y appliqué sa loi
+      </p>
+    </div>
     <img class="nuage" id="nuage_01" src="assets/images/ch-03/nuage.webp" alt="">
     <img class="nuage" id="nuage_02" src="assets/images/ch-03/nuage.webp" alt="">
     <img class="nuage" id="nuage_03" src="assets/images/ch-03/nuage.webp" alt="">
     <img class="nuage" id="nuage_04" src="assets/images/ch-03/nuage.webp" alt="">
-    <div class="ch3-textes">
-      <div class="ch3-carte">
-        <div class="ch3-carte-fond"></div>
-          <p class="ch3-paragraphe">
-            Le Sans-éclat commence donc sa route vers les demi-dieu pour les
-            déthroner de leurs reigne de torture et prendre le throne d'elden
-            pour y appliqué sa loi
-          </p>
-        </div>
+
       </div>
-    </div>
   </section>
-<section id="chapitre4">
+<section class="chapitre" id="chapitre4">
   <img class="ch4-fond" src="assets/images/ch-04/map_elden_ring.jpg" alt="" aria-hidden="true" />
 
   <h2 class="ch4-titre">Le voyage</h2>
@@ -122,42 +127,43 @@
     </div>
   </div>
 </section>
-  <section id="chapitre5">
+  <section class="chapitre" id="chapitre5">
     <h2 class="ch5-titre">La Chute</h2>
 
     <div class="ch5-illustration">
-      <div>
+      <div id="godrick">
         <p class="ch5-illustration-titre">Godrick</p>
-        <img src="assets/images/ch-05/godrick.webp" alt="godrick" class="ch5-image-front" id="godrick" />
-      </div>
-      <!-- <div class="ch5-image-back">
-        <p>BATTU</p>
-      </div> -->
-      <div>
-        <p class="ch5-illustration-titre">Rennala</p>
-        <img src="assets/images/ch-05/renala.webp" alt="renala" class="ch5-image-front" id="renala" />
-      </div>
-      <div>
-        <p class="ch5-illustration-titre">Malenia</p>
-        <img src="assets/images/ch-05/malenia.webp" alt="malenia" class="ch5-image-front" id="malenia" />
-      </div>
-    </div>
-
-    <div class="ch5-textes">
+        <img src="assets/images/ch-05/godrick.webp" alt="godrick" class="ch5-image-front"  />
       <p class="ch5-paragraphe">
         En premier se fut Godrick le greffé qui tomba
       </p>
+      </div>
+      <div id="renala">
+        <p class="ch5-illustration-titre">Rennala</p>
+        <img src="assets/images/ch-05/renala.webp" alt="renala" class="ch5-image-front"  />
       <p class="ch5-paragraphe">
         Ensuite le sans-éclat a battu Rennala, reine de la pleine lune sans la
         tuer, au fond, elle n'était pas méchante
       </p>
+      </div>
+      <div id="malenia">
+        <p class="ch5-illustration-titre">Malenia</p>
+        <img src="assets/images/ch-05/malenia.webp" alt="malenia" class="ch5-image-front"  />
       <p class="ch5-paragraphe">
         Après de multiple autre combat le sans-éclat tua l'épeiste qui n'avais
         jamais perdu, Malenia
       </p>
+
+      </div>
+    </div>
+
+    <div class="ch5-textes">
+
+
+
     </div>
   </section>
-<section id="chapitre6">
+<section class="chapitre" id="chapitre6">
   <h2 class="ch6-titre">Le bilan du voyage</h2>
   <p class="ch6-intro">
     Des boss à vaincre, des armes et des armures à ramasser : voici l'ampleur
@@ -184,10 +190,10 @@
     </div>
   </div>
 </section>
-  <section id="chapitre7"></section>
+  <section class="chapitre" id="chapitre7"></section>
 
   <footer></footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

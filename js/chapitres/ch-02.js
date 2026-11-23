@@ -23,7 +23,7 @@ function ajouterAmbiance(section) {
 
   for (let i = 0; i < NOMBRE_BRAISES; i++) {
     const braise = document.createElement("span");
-    braise.className = "ch2-braise";
+    braise.className = "ch5-braise";
     cadre.appendChild(braise);
 
     const taille = gsap.utils.random(3, 9);
