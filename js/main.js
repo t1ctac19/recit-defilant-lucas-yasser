@@ -79,10 +79,11 @@ window.addEventListener("DOMContentLoaded", () => {
 const chaptersNodeList = document.querySelectorAll(".chapitre");
 
 const chaptersArr = Array.from(chaptersNodeList).map((section) => ({
-  id: section.id,                                  // "la-foret"
-  titre: section.querySelector("h2").textContent,  // "La forêt"
+  id: section.id,                                  
+  titre: section.querySelector("h2").textContent,
 }));
+
+window.nav = createNavigation(chaptersArr);
 
 });
 
-window.nav = createNavigation(chaptersArr);

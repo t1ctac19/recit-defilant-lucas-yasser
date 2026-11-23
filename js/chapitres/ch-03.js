@@ -14,7 +14,6 @@ export function animate(section, chapter) {
       end: "+=2000",
       scrub: 1,
       pin: true,
-      markers: true,
     },
   });
 

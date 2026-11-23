@@ -18,6 +18,27 @@
 </head>
 
 <body>
+      <div id="barre-progression" v-cloak>
+      <div
+        class="progression"
+        :style="{ transform: 'scaleX(' + progress + ')' }"
+      ></div>
+    </div>
+    <div id="navigation" v-cloak>
+      <nav class="chapitres-nav">
+        <ol>
+          <li v-for="(chapter, index) in chapters" :key="chapter.id">
+            <a
+              :href="'#' + chapter.id"
+              :class="{ actif : activeChapterIndex === index }"
+              @click.prevent="goTo(chapter.id)"
+            >
+              {{ chapter.titre }}
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
   <section class="chapitre" id="chapitre1">
     <div class="calque devant ch1-entete">
     <h2 class="ch1-titre">Le sans-éclat</h2>
@@ -74,8 +95,7 @@
 
   <section class="chapitre" id="chapitre3">
   <div class="ch3-entete">
-    
-    <h2 class="ch3-titre">Le Bris</h2>
+    <h2 class="ch3-titre">Le départ</h2>
   </div>
     <div class="parallax_ch3">
     <img id="sky_ch3" class="calque--ciel-1" src="assets/images/ch-03/ciel.webp" alt="">
@@ -190,7 +210,11 @@
     </div>
   </div>
 </section>
-  <section class="chapitre" id="chapitre7"></section>
+  <section class="chapitre" id="chapitre7">
+    <div class="ch7-entete">
+    <h2 class="ch7-titre">Le reigne</h2>
+  </div>
+  </section>
 
   <footer></footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.js"></script>

@@ -1,0 +1,27 @@
+.chapitres-nav {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  padding: 1rem 1.5rem 1rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
+  border: 1px solid #8f7f58;
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.8),
+    0 10px 30px rgba(0, 0, 0, 0.7),
+    inset 0 0 40px rgba(0, 0, 0, 0.6);
+}
+.chapitres-nav ol {
+  margin: 0;
+}
+.chapitres-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.chapitres-nav a.actif {
+  font-weight: 700;
+  color: #ff2b47;
+}
