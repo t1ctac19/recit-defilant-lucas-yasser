@@ -156,10 +156,7 @@
   aspect-ratio: 8 / 3;
   background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
   border: 1px solid #8f7f58;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.8),
-    0 10px 30px rgba(0, 0, 0, 0.7),
-    inset 0 0 40px rgba(0, 0, 0, 0.6);
+
   }
 
 .ch3-entete {
@@ -188,5 +185,4 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #e9e0a4;
-  text-shadow: 0 0 30px rgba(233, 224, 164, 0.5);
 }

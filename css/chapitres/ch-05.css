@@ -9,9 +9,11 @@
 
 .ch5-titre {
   font-family: "Cinzel", cursive;
-  font-size: 24px;
   line-height: 1.5;
-  color: #fff;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #e9e0a4;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -48,10 +50,6 @@
   background: linear-gradient(rgba(28, 25, 19, 0.95), rgba(14, 12, 9, 0.97));
   border: 1px solid #8f7f58;
   border-radius: 6px;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.8),
-    0 10px 30px rgba(0, 0, 0, 0.7),
-    inset 0 0 40px rgba(0, 0, 0, 0.6);
 }
 
 .ch5-illustration-titre {

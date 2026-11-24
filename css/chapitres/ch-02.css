@@ -66,7 +66,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #e9e0a4;
-  text-shadow: 0 0 30px rgba(233, 224, 164, 0.5);
+
 }
 
 /* ----- Les cartes ----- */
@@ -119,7 +119,6 @@
   transform: translate(-50%, -52%);
   color: #c9b77a;
   font-size: 0.9rem;
-  text-shadow: 0 0 4px #000, 0 0 8px #000;
 }
 
 /* Le texte, par-dessus la boîte */
@@ -150,13 +149,7 @@
 .ch2-carte:nth-child(2) .ch2-paragraphe::before { content: "II"; }
 .ch2-carte:nth-child(3) .ch2-paragraphe::before { content: "III"; }
 /* ----- Braises (animation toujours active) ----- */
-.ch2-braise {
-  position: absolute;
-  bottom: -10px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #fff6c0 0%, #e9b84a 45%, transparent 70%);
-  pointer-events: none;
-}
+
 
 /* Sur petit écran */
 @media (max-width: 700px) {
