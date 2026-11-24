@@ -47,7 +47,6 @@
 
 .ch2-entete {
   position: relative;
-  z-index: 2;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -74,7 +73,6 @@
 
 .ch2-textes {
   position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;

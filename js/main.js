@@ -8,6 +8,7 @@ import { Observer } from "https://esm.sh/gsap@3.12.5/Observer";
 import { ScrollTrigger } from "https://esm.sh/gsap@3.12.5/ScrollTrigger";
 import { ScrollToPlugin } from "https://esm.sh/gsap@3.12.5/ScrollToPlugin";
 import { TextPlugin } from "https://esm.sh/gsap@3.12.5/TextPlugin";
+import { createNavigation } from "./navigation.js";
 
 // Enregistrement de tous les plugins
 gsap.registerPlugin(
@@ -38,6 +39,7 @@ import * as ch04 from "./chapitres/ch-04.js";
 import * as ch05 from "./chapitres/ch-05.js";
 import * as ch06 from "./chapitres/ch-06.js";
 import * as ch07 from "./chapitres/ch-07.js";
+
 
 window.addEventListener("DOMContentLoaded", () => {
   const section1 = document.querySelector("#chapitre1");
@@ -73,6 +75,15 @@ window.addEventListener("DOMContentLoaded", () => {
   if (section7) {
     ch06.animate?.(section7);
   }
+
+const chaptersNodeList = document.querySelectorAll(".chapitre");
+
+const chaptersArr = Array.from(chaptersNodeList).map((section) => ({
+  id: section.id,                                  
+  titre: section.querySelector("h2").textContent,
+}));
+
+window.nav = createNavigation(chaptersArr);
 
 });
 
