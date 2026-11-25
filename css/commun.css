@@ -25,3 +25,21 @@
   font-weight: 700;
   color: var(--or-fonce);
 }
+/* ----- Barre de progression de la page ----- */
+#barre-progression {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 5px;
+  background: rgba(13, 19, 13, 0.6);
+}
+
+.progression {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, #b99a4a, #e9e0a4);
+}

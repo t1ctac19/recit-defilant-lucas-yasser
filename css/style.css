@@ -121,13 +121,3 @@ section + section {
 .ch5-paragraphe {
   color: var(--creme);
 }
-
-/* ===== Pied de page ===== */
-footer {
-  min-height: 20vh;
-  background: var(--noir-vert);
-  border-top: 2px solid var(--or-fonce);
-  color: var(--olive);
-  text-align: center;
-  padding: 2rem 1rem;
-}
