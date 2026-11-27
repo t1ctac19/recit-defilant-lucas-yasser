@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "titre": "Le sans-éclat",
+    "medias": [
+      { "nom": "ciel", "src": "assets/images/ch-01/elden-ring-sky.svg", "alt": "" },
+      { "nom": "arbre", "src": "assets/images/ch-01/elden-ring-tree.svg", "alt": "" },
+      { "nom": "ruines", "src": "assets/images/ch-01/ruins-layer.svg", "alt": "" },
+      { "nom": "colline", "src": "assets/images/ch-01/foreground-hill.svg", "alt": "" },
+      { "nom": "roches", "src": "assets/images/ch-01/rocks-layer.svg", "alt": "" },
+      { "nom": "personnage", "src": "assets/images/ch-01/elden-ring-character.svg", "alt": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "titre": "Le Bris",
+    "medias": [
+      { "nom": "fond", "src": "assets/images/ch-01/elden-ring-landscape.svg", "alt": "" },
+      { "nom": "logo", "src": "assets/images/ch-02/elden_ring_casse.svg", "alt": "Logo Elden Ring" }
+    ],
+    "textes": [
+      "L'Anneau d'Elden se brise, et un éclat de lumière déchire le ciel. Dans un silence lourd, l'ordre qui tenait le monde vole en morceaux.",
+      "Les demi-dieux, enfants de la reine Marika, se disputent les fragments de l'Anneau. Chacun veut le pouvoir pour lui seul, et personne ne veut céder.",
+      "Le monde sombre, et la guerre commence. Les terres se couvrent de ruines pendant que l'Arbre-Monde brille encore au loin."
+    ]
+  },
+  {
+    "id": 3,
+    "titre": "Le départ",
+    "medias": [
+      { "nom": "ciel", "src": "assets/images/ch-03/ciel.webp", "alt": "" },
+      { "nom": "colline", "src": "assets/images/ch-01/foreground-hill.svg", "alt": "" },
+      { "nom": "roches", "src": "assets/images/ch-01/rocks-layer.svg", "alt": "" },
+      { "nom": "personnage", "src": "assets/images/ch-03/elden_ring_character_02.webp", "alt": "" },
+      { "nom": "nuage", "src": "assets/images/ch-03/nuage.webp", "alt": "" }
+    ],
+    "textes": [
+      "Le Sans-éclat commence donc sa route vers les demi-dieu pour les déthroner de leurs reigne de torture et prendre le throne d'elden pour y appliqué sa loi"
+    ]
+  },
+  {
+    "id": 4,
+    "titre": "Le voyage",
+    "medias": [
+      { "nom": "fond", "src": "assets/images/ch-04/map_elden_ring.jpg", "alt": "" }
+    ],
+    "regions": [
+      { "nom": "Limgrave", "texte": "Les prairies sont vertes, mais les ruines rappellent déjà la guerre." },
+      { "nom": "Liurnia", "texte": "Un pays de lacs et de brume, où l'académie de Raya Lucaria veille au loin." },
+      { "nom": "Caelid", "texte": "Une terre rouge et dévastée, rongée par la pourriture écarlate." }
+    ]
+  },
+  {
+    "id": 5,
+    "titre": "La Chute",
+    "boss": [
+      {
+        "id": "godrick",
+        "nom": "Godrick",
+        "image": "assets/images/ch-05/godrick.webp",
+        "texte": "En premier se fut Godrick le greffé qui tomba"
+      },
+      {
+        "id": "renala",
+        "nom": "Rennala",
+        "image": "assets/images/ch-05/renala.webp",
+        "texte": "Ensuite le sans-éclat a battu Rennala, reine de la pleine lune sans la tuer, au fond, elle n'était pas méchante"
+      },
+      {
+        "id": "malenia",
+        "nom": "Malenia",
+        "image": "assets/images/ch-05/malenia.webp",
+        "texte": "Après de multiple autre combat le sans-éclat tua l'épeiste qui n'avais jamais perdu, Malenia"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titre": "Le bilan du voyage",
+    "textes": [
+      "Des boss à vaincre, des armes et des armures à ramasser : voici l'ampleur des Terres Intermédiaires."
+    ],
+    "chiffres": [
+      { "cle": "bosses", "etiquette": "Boss" },
+      { "cle": "armes", "etiquette": "Armes" },
+      { "cle": "armures", "etiquette": "Armures" }
+    ]
+  },
+  {
+    "id": 7,
+    "titre": "Le trône",
+    "medias": [
+      { "nom": "chateau", "src": "assets/images/ch-07/castle_elden_ring.webp", "alt": "" },
+      { "nom": "arbre", "src": "assets/images/ch-01/elden-ring-tree.svg", "alt": "" },
+      { "nom": "trone", "src": "assets/images/ch-07/character_throne_elden_ring.webp", "alt": "Le Sans-éclat assis sur le trône d'Elden" }
+    ],
+    "textes": [
+      "Après tous ses combats, le Sans-éclat répare l'Anneau d'Elden.",
+      "L'Arbre-Monde retrouve sa lumière.",
+      "Le héros s'assoit sur le trône : il devient Seigneur d'Elden."
+    ]
+  }
+]

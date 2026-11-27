@@ -13,8 +13,34 @@ const REGIONS = [
 
 const NS = "http://www.w3.org/2000/svg";
 
-export function createMedia(chapter) {
-  return ``;
+export function createMedia(chapitre) {
+  const fond = chapitre.medias.find((x) => x.nom === "fond");
+
+  // Un texte pour chaque région du JSON
+  const textes = chapitre.regions
+    .map(
+      (region) => `
+      <div class="ch4-texte">
+        <h3>${region.nom}</h3>
+        <p>${region.texte}</p>
+      </div>`
+    )
+    .join("");
+
+  return `
+    <img class="ch4-fond" src="${fond.src}" alt="${fond.alt}" aria-hidden="true" />
+
+    <h2 class="ch4-titre">${chapitre.titre}</h2>
+
+    <svg id="ch4-svg" viewBox="0 0 1200 600" aria-label="Trajet du Sans-éclat">
+      <path class="ch4-chemin-fond"
+        d="M120,430 C260,540 330,200 520,160 C700,140 780,470 940,440 C1040,420 1090,340 1090,270" />
+      <path id="ch4-chemin"
+        d="M120,430 C260,540 330,200 520,160 C700,140 780,470 940,440 C1040,420 1090,340 1090,270" />
+      <circle id="ch4-marqueur" cx="0" cy="0" r="14" />
+    </svg>
+
+    <div class="ch4-textes">${textes}</div>`;
 }
 
 export function animate(section, chapter) {

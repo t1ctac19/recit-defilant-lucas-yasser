@@ -13,8 +13,23 @@ const CHIFFRES_FORCES = { armures: 60 };
 const SECOURS = { bosses: 100, armes: 300, armures: 60 };
 /* ==================== */
 
-export function createMedia(chapter) {
-  return ``;
+export function createMedia(chapitre) {
+  // Un chiffre avec sa barre pour chaque entrée du JSON
+  const chiffres = chapitre.chiffres
+    .map(
+      (c) => `
+      <div class="ch6-chiffre">
+        <span class="ch6-nombre" data-cle="${c.cle}">0</span>
+        <span class="ch6-etiquette">${c.etiquette}</span>
+        <div class="ch6-barre"><div class="ch6-barre-remplie" data-cle="${c.cle}"></div></div>
+      </div>`
+    )
+    .join("");
+
+  return `
+    <h2 class="ch6-titre">${chapitre.titre}</h2>
+    <p class="ch6-intro">${chapitre.textes[0]}</p>
+    <div class="ch6-chiffres">${chiffres}</div>`;
 }
 
 // Demande à l'API combien il y a d'éléments dans une liste (boss, armes, armures)
