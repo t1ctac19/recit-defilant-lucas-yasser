@@ -41,6 +41,7 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 | Média animable 1 : image en calques | Yasser/Lucas | Préparation et intégration |
 | Média animable 2 : SVG préparé pour GSAP | Yasser/Lucas | Préparation et intégration |
 | Composant Vue : barre de progression | Yasser| Barre fixe en haut de la page qui se remplit selon le défilement |
+| Composant Vue : barre de navigation | Lucas | Barre fixe a gauche de la page qui permet de descendre aux autres chapitre |
 | *Fetch* externe et dataviz | Yasser | Récupérer les données de l'API et les afficher au chapitre 6 |
 | Chargement des chapitres (JSON) | Lucas | Lire le fichier JSON et afficher les chapitres |
 | Structure commune (HTML, CSS de base, mise en page) | Ensemble | |

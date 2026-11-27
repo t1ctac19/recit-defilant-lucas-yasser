@@ -41,8 +41,37 @@ import * as ch05 from "./chapitres/ch-05.js";
 import * as ch06 from "./chapitres/ch-06.js";
 import * as ch07 from "./chapitres/ch-07.js";
 
+// AJOUT : même ordre que dans data.json
+const modules = [ch01, ch02, ch03, ch04, ch05, ch06, ch07];
 
-window.addEventListener("DOMContentLoaded", () => {
+// AJOUT : "async" pour pouvoir utiliser await
+window.addEventListener("DOMContentLoaded", async () => {
+
+  // ===== AJOUT : construire le HTML à partir du JSON =====
+  let chapitres;
+  try {
+    const reponse = await fetch("data/data.json");
+    chapitres = await reponse.json();
+  } catch (erreur) {
+    console.error("Impossible de lire data/data.json", erreur);
+    return;
+  }
+
+  const recit = document.querySelector("#recit");
+
+  chapitres.forEach((chapitre, i) => {
+    const section = document.createElement("section");
+    section.className = "chapitre";
+    section.id = "chapitre" + chapitre.id;
+    section.innerHTML = modules[i].createMedia(chapitre);
+    recit.appendChild(section);
+  });
+
+  // Attendre les images pour que GSAP mesure les bonnes tailles
+  const images = [...recit.querySelectorAll("img")];
+  await Promise.all(images.map((img) => img.decode().catch(() => {})));
+  // ===== FIN DE L'AJOUT =====
+
   const section1 = document.querySelector("#chapitre1");
   if (section1) {
     ch01.animate(section1);
@@ -87,4 +116,7 @@ const chaptersArr = Array.from(chaptersNodeList).map((section) => ({
 window.nav = createNavigation(chaptersArr);
 window.progression = createProgression();
 });
-
+async function loadProjects() {
+  const response = await fetch("data/projects.json");
+  return response.json();
+}
