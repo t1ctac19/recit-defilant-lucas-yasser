@@ -7,9 +7,7 @@ const DECALAGE_FOND = 0.5;        // de combien le fond monte pendant tout le ch
 const CARTES_SE_REFERMENT = true; // true = la carte se referme quand elle sort de l'écran
 /* ===================================================== */
 
-export function createMedia(chapter) {
-  return ``;
-}
+
 
 // ----- Le fond : il monte plus lentement que la page (parallaxe) -----
 function animerFond(section) {
@@ -132,4 +130,33 @@ export function animate(section, chapter) {
   animerFond(section);
   animerEntete(section);
   animerCartes(section);
+}
+export function createMedia(chapitre) {
+  const image = (nom) => {
+    const m = chapitre.medias.find((x) => x.nom === nom);
+    return `src="${m.src}" alt="${m.alt}"`;
+  };
+
+  // Une carte pour chaque texte du JSON
+  const cartes = chapitre.textes
+    .map(
+      (texte) => `
+      <div class="ch2-carte">
+        <div class="ch2-carte-fond"></div>
+        <p class="ch2-paragraphe">${texte}</p>
+      </div>`
+    )
+    .join("");
+
+  return `
+    <div class="ch2-fond-wrap">
+      <div class="ch2-fond-cadre">
+        <img class="ch2-fond" ${image("fond")} aria-hidden="true" />
+      </div>
+    </div>
+    <div class="ch2-entete">
+      <img class="ch2-logo" ${image("logo")} />
+      <h2 class="ch2-titre">${chapitre.titre}</h2>
+    </div>
+    <div class="ch2-textes">${cartes}</div>`;
 }
