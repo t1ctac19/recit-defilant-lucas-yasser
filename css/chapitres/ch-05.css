@@ -15,7 +15,8 @@
   text-transform: uppercase;
   color: #e9e0a4;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom:0.5%;
 }
 
 .ch5-texte {
@@ -31,7 +32,6 @@
   margin: 0;
   font-family: "Cinzel", serif;
   font-size: clamp(0.85rem, 1.6vw, 1.05rem);
-  line-height: 1.5;
   color: #e6dfc8;
 }
 
@@ -67,10 +67,10 @@
   cursor: pointer;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   align-items: center;
-  background-color: var(--fond)
+  background-color: var(--fond);
 }
 
 .ch5-image-front {
