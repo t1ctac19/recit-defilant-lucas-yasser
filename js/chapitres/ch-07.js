@@ -20,8 +20,32 @@ const DEPARTS_TRONE = {
   bas: { xPercent: 0, yPercent: 110 },
 };
 
-export function createMedia(chapter) {
-  return ``;
+export function createMedia(chapitre) {
+  const image = (nom) => {
+    const m = chapitre.medias.find((x) => x.nom === nom);
+    return `src="${m.src}" alt="${m.alt}"`;
+  };
+
+  const textes = chapitre.textes
+    .map((texte) => `<div class="ch7-texte"><p>${texte}</p></div>`)
+    .join("");
+
+  return `
+    <img class="ch7-chateau" ${image("chateau")} aria-hidden="true" />
+
+    <div class="ch7-arbre-zone">
+      <img class="ch7-arbre" ${image("arbre")} aria-hidden="true" />
+    </div>
+
+    <div class="ch7-braises"></div>
+
+    <div class="ch7-trone-zone">
+      <img class="ch7-trone" ${image("trone")} />
+    </div>
+
+    <h2 class="ch7-titre">${chapitre.titre}</h2>
+
+    <div class="ch7-textes">${textes}</div>`;
 }
 
 // ----- Les braises : des petits points dorés qui montent en continu -----
