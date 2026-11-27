@@ -30,3 +30,4 @@ export function createMedia(chapitre) {
       <img id="character" class="calque premier-plan calque--character-1" ${image("personnage")}>
     </div>`;
 }
+

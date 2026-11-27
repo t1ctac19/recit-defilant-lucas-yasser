@@ -45,6 +45,7 @@ import * as ch07 from "./chapitres/ch-07.js";
 const modules = [ch01, ch02, ch03, ch04, ch05, ch06, ch07];
 
 window.addEventListener("DOMContentLoaded", async () => {
+
   // 1. Lecture des données des chapitres depuis le fichier JSON
   let chapitres;
   try {
@@ -72,6 +73,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const images = [...recit.querySelectorAll("img")];
   await Promise.all(images.map((img) => img.decode().catch(() => {})));
 
+
   // 4. Le HTML est en place : lancement de l'animation de chaque chapitre
   chapitres.forEach((chapitre, i) => {
     const section = document.querySelector("#chapitre" + chapitre.id);
@@ -88,12 +90,39 @@ window.addEventListener("DOMContentLoaded", async () => {
     titre: section.querySelector("h2").textContent,
   }));
 
-  window.nav = createNavigation(chaptersArr);
-  window.progression = createProgression();
-});
+  const section4 = document.querySelector("#chapitre4");
+  if (section4) {
+    ch04.animate?.(section4);
+  }
+  const section5 = document.querySelector("#chapitre5");
+  if (section5) {
+    console.log("Chapitre 5 trouvé !");
+    ch05.animate?.(section5);
+  }
+  const section6 = document.querySelector("#chapitre6");
+  if (section6) {
+    ch06.animate?.(section6);
+  }
 
-// Charge la liste des projets depuis le fichier JSON
-async function loadProjects() {
-  const response = await fetch("js/data.json");
-  return response.json();
-}
+  const section7 = document.querySelector("#chapitre7");
+  if (section7) {
+    ch07.animate?.(section7);
+  }
+
+const chaptersNodeList = document.querySelectorAll(".chapitre");
+
+const chaptersArr = Array.from(chaptersNodeList).map((section) => ({
+  id: section.id,                                  
+  titre: section.querySelector("h2").textContent,
+}));
+
+
+
+
+window.nav = createNavigation(chaptersArr);
+window.progression = createProgression();
+});
+// async function loadProjects() {
+//   const response = await fetch("js/data.json");
+//   return response.json();
+// }
